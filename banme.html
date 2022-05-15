@@ -12,6 +12,10 @@
     var index = url.href.indexOf("?");
     index += 1;
     var x = url.href.substring(index);
+                if (x==url.toString()){
+                alert("you cant stay here")
+                window.close();
+            }
     document.getElementById("site").textContent=" "+x;
 </script>
 </body>
