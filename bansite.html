@@ -42,7 +42,7 @@
                 location.replace("https://liad07.github.io/banme/banme?"+x.toString()) ;
         document.getElementById("site").textContent=window.location.href;
             } else {
-                user = window.location.href;
+                user = x;
                 if (user != "" && user != null) {
                     setCookie("username", user, 30);
                 }
