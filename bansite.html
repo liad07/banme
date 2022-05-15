@@ -29,10 +29,16 @@
 
         function checkCookie() {
             let user = getCookie("username");
+            var loc=window.location.href;
+            var num = 0;
+            var index = loc.indexOf("?");
+            index += 1;
+            var x = loc.substring(index);
+            alert(x)
+
             if (user != "") {
-                var loc=window.location.href;
-                location.replace("https://liad07.github.io/banme/banme?"+loc.toString()) ;
-                alert(loc)
+                location.replace("https://liad07.github.io/banme/banme?"+x.toString()) ;
+                alert(x)
         document.getElementById("site").textContent=window.location.href;
             } else {
                 user = window.location.href;
