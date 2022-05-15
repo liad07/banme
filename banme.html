@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>you banned from:<span id="site"></span></h1>
+<script>
+    let url = new URL(window.location.href);
+    var num = 0;
+    var index = url.href.indexOf("?");
+    index += 1;
+    var x = url.href.substring(index);
+    document.getElementById("site").textContent=" "+x;
+</script>
+</body>
+</html>
