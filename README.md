@@ -1,3 +1,4 @@
+## add this script to your script
 ```javascript      
       function setCookie(cname,cvalue,exdays) {
             const d = new Date();
