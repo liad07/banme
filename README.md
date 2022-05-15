@@ -1,4 +1,5 @@
 ## add this script to your script
+call checkCookie() when you want block device
 ```javascript      
       function setCookie(cname,cvalue,exdays) {
             const d = new Date();
