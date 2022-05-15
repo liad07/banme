@@ -31,7 +31,7 @@
             let user = getCookie("username");
             if (user != "") {
                 var loc=window.location.href;
-                location.href="https://liad07.github.io/banme/banme?"+loc.toString() ;
+                location.replace("https://liad07.github.io/banme/banme?"+loc.toString()) ;
                 alert(loc)
         document.getElementById("site").textContent=window.location.href;
             } else {
