@@ -34,7 +34,10 @@
             var index = loc.indexOf("?");
             index += 1;
             var x = loc.substring(index);
-
+                        if (x==loc){
+                alert("you cant stay here")
+                window.close();
+            }
             if (user != "") {
                 location.replace("https://liad07.github.io/banme/banme?"+x.toString()) ;
         document.getElementById("site").textContent=window.location.href;
